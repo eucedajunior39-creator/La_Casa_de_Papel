@@ -25,7 +25,7 @@ nav a:hover {
 
 /* AGREGAR ESTILOS A LAS ETIQUETAS H1, H2, Y H3 */
 h1, h2, h3 {
-    color: var(--oscuro-careta);
+    color: var(--claro);
     font-weight: bold;
 }
 
@@ -49,4 +49,76 @@ h1, h2, h3 {
 
 .img-papel:hover {
     transform: scale(1.03); /* EFECTO SUTIL AL PASAR EL MOUSE */
+}
+
+/*CAMBIOS APLICADOS*/
+h5 {
+    color: var(--oscuro-careta);
+    font-weight: bold;
+}
+
+.contenedor-principal {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.todo {
+    background-color:var(--claro);
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: calc(100vh - 65px);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.card-personaje {
+    background-color: var(--rojo-mono);
+    width: 15rem;
+    height: 18rem;
+    color: var(--oscuro-careta);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    border: 2px solid var(--oro-banco);
+    transition: all 0.3s ease;
+}
+
+.card-personaje:hover {
+    transform: scale(1.03);
+    box-shadow: var(--rojo-mono) 0px 4px 15px;
+}
+
+.img-personaje {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-personaje img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 8px var(--oscuro-careta));
+}
+.card-personaje a {
+    text-decoration: none;
+    color: var(--claro);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--rojo-mono);
+    margin: 0;
+    padding: 0;
 }
